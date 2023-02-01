@@ -1,0 +1,27 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  height: auto;
+  background-color: var(--blue-800);
+  border: 1px solid transparent;
+  filter: brightness(0.8);
+  transition: 0.1s;
+  // border-radius: 5px;
+
+  &:hover {
+    border-color: var(--green-300);
+    box-shadow: 0px 0px 10px 1px var(--green-400);
+    filter: brightness(1);
+  }
+}

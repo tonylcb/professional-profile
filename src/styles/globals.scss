@@ -1,0 +1,102 @@
+@import "../styles/mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  // --gray50: #fafcff;
+  // --gray100: #f4f6fc;
+  // --gray200: #dfe0e6;
+  // --gray300: #a8a8b3;
+  // --gray600: #616161;
+  // --gray700: #323238;
+  // --gray800: #29292e;
+  // --gray850: #1f2729;
+  // --gray900: #121214;
+  // --background: #0c0c0c;
+  --background: #020e11;
+   
+  --blue-100: #00f8fe;
+  --blue-600: #0b303f;
+  --blue-800: #05181f;
+  --green-100: #10e9d0;
+  --green-200: #1dbeac;
+  --green-300: #1a7a6f;
+  --green-400: #219b8d;
+  --green-800: #051a18;
+  // font-size
+  --biggest: 2.5rem;
+  --big: 2rem;
+  --medium-max: 1.75rem;
+  --medium: 1.5rem;
+  --medium-min: 1.25rem;
+  --default: 1rem;
+  --small: 0.875rem;
+  --smallest: 0.75rem;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 300 1rem "Roboto Mono", sans-serif;
+  color: var(--green-100);
+}
+
+main {
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--green-100);
+}
+
+h1 {
+  font-size: var(--big);
+  @include tablet {
+    font-size: var(--medium-max);
+  }
+  @include mobile {
+    font-size: var(--medium);
+  }
+}
+
+p {
+  line-height: 28px;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// ul {
+//   .slick-active {
+//     background: var(--pink100) !important;
+//   }
+// }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
