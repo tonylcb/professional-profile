@@ -23,7 +23,7 @@
   --blue-100: #00f8fe;
   --blue-600: #0b303f;
   --blue-800: #05181f;
-  --green-100: #10e9d0;
+  --green-100: #4ac1bc;
   --green-200: #1dbeac;
   --green-300: #1a7a6f;
   --green-400: #219b8d;
@@ -48,8 +48,17 @@ button {
   color: var(--green-100);
 }
 
-main {
+body {
   background-color: var(--background);
+}
+
+#__next {
+  display: flex;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
 }
 
 h1,
@@ -72,7 +81,7 @@ h1 {
 }
 
 p {
-  line-height: 28px;
+  line-height: 26px;
   font-weight: 400;
 }
 
@@ -82,6 +91,19 @@ li {
 
 button {
   cursor: pointer;
+  height: 50px;
+  min-width: 160px;
+  background: linear-gradient(180deg, rgba(10,48,45,1) 0%, rgba(9,9,121,0) 50%, rgba(10,48,45,1) 100%);
+  text-transform: uppercase;
+  border: 1px solid var(--green-400);
+  filter: brightness(0.7);
+  transition: 0.1s;
+  font-weight: 500;
+  &:hover {
+    border-color: var(--green-300);
+    box-shadow: 0px 0px 10px 1px var(--green-400);
+    filter: brightness(1);
+  }
 }
 
 a {
