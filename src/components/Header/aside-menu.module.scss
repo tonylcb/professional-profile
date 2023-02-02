@@ -1,14 +1,13 @@
 .asideContainer {
-    padding: 20px 1rem;
+    padding: 20px 0;
     border-right: 1px solid var(--green-400);
-    background: linear-gradient(180deg, rgba(10,48,45,1) 0%, rgba(9,9,121,0) 35%, rgba(9,9,121,0) 65%, rgba(10,48,45,1) 100%);
-    filter: brightness(0.7);
+    background: linear-gradient(180deg, rgba(10,48,45,0.2) 0%, rgba(9,9,121,0) 35%, rgba(9,9,121,0) 65%, rgba(10,48,45,0.2) 100%);
     transition: 0.1s;
-
+    position: fixed;
+    height: 100vh;
     &:hover {
-        border-color: var(--green-300);
+        border-color: var(--green-100);
         // box-shadow: 0px 0px 10px 1px var(--green-400);
-        filter: brightness(1);
       }
 }
 
@@ -21,5 +20,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+}
+
+.asideMenuItem {
+    transition: 0.1s;
+    cursor: pointer;
+    padding: 15px 1rem;
+    &:hover {
+        background: rgba(10,48,45,1);
+        filter: brightness(1.2);
+    }
 }

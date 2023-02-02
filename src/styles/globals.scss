@@ -100,8 +100,8 @@ button {
   transition: 0.1s;
   font-weight: 500;
   &:hover {
-    border-color: var(--green-300);
-    box-shadow: 0px 0px 10px 1px var(--green-400);
+    border-color: var(--green-100);
+    // box-shadow: 0px 0px 10px 1px var(--green-400);
     filter: brightness(1);
   }
 }

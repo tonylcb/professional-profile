@@ -1,8 +1,17 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 4rem 2rem;
+
+  & section {
+    margin-bottom: 80px;
+
+  }
+}
+
+.mainTitle {
+  margin-bottom: 40px;
 }
 
 .card {
@@ -10,19 +19,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
   width: 100%;
-  max-width: 400px;
-  padding: 20px;
+  max-width: 800px;
+  padding: 40px 60px;
   height: auto;
-  background: linear-gradient(180deg, rgba(10,48,45,1) 0%, rgba(9,9,121,0) 50%, rgba(10,48,45,1) 100%);
+  background: linear-gradient(180deg, rgba(10,48,45,0.2) 0%, rgba(9,9,121,0) 50%, rgba(10,48,45,0.2) 100%);
   border: 1px solid var(--green-400);
-  filter: brightness(0.7);
   transition: 0.1s;
-
+  cursor: default;
+  
   &:hover {
-    border-color: var(--green-300);
-    box-shadow: 0px 0px 10px 1px var(--green-400);
-    filter: brightness(1);
+    border-color: var(--green-100);
   }
 }
